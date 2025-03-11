@@ -8,3 +8,14 @@ class ToDoSerializer(serializers.ModelSerializer):
     class Meta:
         model = ToDo
         fields = ['id', 'title', 'memo', 'created', 'completed']
+
+class ToDoSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = ToDo
+        fields = ['title', 'memo', 'created', 'completed']
+
+class TodoToggleCompleteSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ToDo
+        fields = []
